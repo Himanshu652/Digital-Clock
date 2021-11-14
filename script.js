@@ -8,7 +8,7 @@ function digitalClock(){
     
     let hours = parseInt(currentTime.slice(0,2));
 
-    if(minutes < 52){
+    if(hours < 18){
         containerIn.classList.add('sunrise');
         containerIn.classList.remove('night');
     }else{
