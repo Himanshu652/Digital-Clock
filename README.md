@@ -1,6 +1,6 @@
 # Digital Clock
 
-Simple digital clock that shows time in hours : minutes : seconds with the background image changing according to the time of sunrise and sunset. After learning JavaScript Date method concepts , I built this project in order to put learning into practice. The background images changes after 18:00:00 (6 pm) from sunrise image to night sky image.
+Simple digital clock that shows time in hours : minutes : seconds with the background image changing according to the time of sunrise and sunset. After learning JavaScript Date method concepts , I built this project in order to put learning into practice. The background image changes after 18:00:00 (6 pm) from sunrise image to night sky image.
 
 ## Project In Action
 
