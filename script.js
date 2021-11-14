@@ -1,5 +1,5 @@
 let timeEL = document.getElementById('time');
-let bodyEl = document.body;
+let containerIn = document.querySelector('.container-in');
 
 function digitalClock(){
     let seconds = new Date().getSeconds();
@@ -8,12 +8,12 @@ function digitalClock(){
     
     let hours = parseInt(currentTime.slice(0,2));
 
-    if(hours < 18){
-        bodyEl.classList.add('sunrise');
-        bodyEl.classList.remove('night');
+    if(minutes < 52){
+        containerIn.classList.add('sunrise');
+        containerIn.classList.remove('night');
     }else{
-        bodyEl.classList.add('night');
-        bodyEl.classList.remove('sunrise');
+        containerIn.classList.add('night');
+        containerIn.classList.remove('sunrise');
     }
     timeEL.innerHTML = `${hours < 10 ? '0' + hours:hours}:${minutes < 10 ? '0' + minutes:minutes}:${seconds < 10 ? '0' + seconds:seconds}`;
 }
